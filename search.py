@@ -131,21 +131,6 @@ class ll:
             cur = cur.next
             pos += 1
         return "not found"
-    
-    def __getitem__(self, index):
-        cur = self.head
-        pos = 0
-        
-        while cur != None:
-            if pos == index:
-                return cur.data
-            
-            cur = cur.next
-            pos += 1
-            
-        return 'indexerror'
-        
-        
         
          
 

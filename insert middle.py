@@ -59,26 +59,27 @@ class ll:
         self.n += 1
         
         
-    def insert_after(self, after, value):
-        new_node = node(value)
+    def insert_after(self, after, value): # for inserting after the particular element
+        new_node = node(value) # first create a node
         
         cur = self.head
         
-        while cur != None:
-            if cur.data == after:
+        while cur != None: # till it reaches the last element pull a loop
+            if cur.data == after: # if item found then break the loop
                 break
             
-            cur = cur.next
+            cur = cur.next # continue finding
             
             
-        if cur != None:
+        if cur != None: # if the element is found in the ll then insert ht enew node
             new_node.next = cur.next
             cur.next = new_node
             self.n += 1
                  
 
-        else:
-            return 'item not found'
+        else: #if not found in the ll
+            print("not found")
+            return
         # case 1 break -> after is found
         # case 2 -> item is not found -> cur -> None
             

@@ -29,14 +29,15 @@ class ll:
         #increment n
         self.n += 1
         
-    def traverse(self):
+    def __str__(self): # travesring the ll here we have taken __str__ just to print the value 
         
-        cur = self.head
+        cur = self.head # present cur will be first initialised to the head of the ll
         
-        while cur != None:
-            
-            print(cur.data)
+        result = ""
+        while cur != None: # whenever we eant to traverse till the last element we give this 
+            result += str(cur.data) + "->"
             cur = cur.next
+        return result[:-2]
         
         
         
@@ -46,4 +47,4 @@ l.insert_at_head(2)
 l.insert_at_head(3)
 l.insert_at_head(4)
 # print(len(l))
-print(l.traverse())
+print(l)

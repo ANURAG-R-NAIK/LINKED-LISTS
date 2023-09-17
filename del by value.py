@@ -119,35 +119,6 @@ class ll:
         else:
             print("not found") # else reached till last element but the element not found
             return
-        
-    def search(self, value):
-        
-        cur = self.head
-        pos = 0
-        
-        while cur != None:
-            if cur.data == value:
-                return pos
-            cur = cur.next
-            pos += 1
-        return "not found"
-    
-    def __getitem__(self, index):
-        cur = self.head
-        pos = 0
-        
-        while cur != None:
-            if pos == index:
-                return cur.data
-            
-            cur = cur.next
-            pos += 1
-            
-        return 'indexerror'
-        
-        
-        
-         
 
         
             
