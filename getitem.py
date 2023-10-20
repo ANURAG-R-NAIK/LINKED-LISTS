@@ -132,7 +132,7 @@ class ll:
             pos += 1
         return "not found"
     
-    def __getitem__(self, index):
+    def __getitem__(self, index): 
         cur = self.head
         pos = 0
         
@@ -153,7 +153,7 @@ class ll:
             
         
         
-p = ll()
+p = ll() 
 print(p)
 p.append(10)
 p.append(20)
